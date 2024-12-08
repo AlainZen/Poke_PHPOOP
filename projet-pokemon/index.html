@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combat Pokémon</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .pokemon-form {
+        flex: 1;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .pokemon-form img {
+        width: 120px;
+        height: 120px;
+        display: none;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .combat-logs {
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        max-height: 300px;
+        overflow-y: auto;
+        text-align: left;
+        width: 100%;
+      }
+
+      .combat-logs p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Formulaires Pokémon -->
+      <div class="form-container">
+        <!-- Formulaire Pokémon 1 -->
+        <div class="pokemon-form" id="form-pokemon1">
+          <select id="pokemon1"></select>
+          <img id="image-pokemon1" alt="Pokémon 1" />
+        </div>
+
+        <!-- Formulaire Pokémon 2 -->
+        <div class="pokemon-form" id="form-pokemon2">
+          <select id="pokemon2"></select>
+          <img id="image-pokemon2" alt="Pokémon 2" />
+        </div>
+      </div>
+
+      <!-- Bouuton pour lancer le combat -->
+      <button id="start-combat">Lancer le Combat</button>
+
+      <!-- logs + scrols -->
+      <div id="combat-logs" class="combat-logs"></div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

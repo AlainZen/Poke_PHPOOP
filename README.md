@@ -7,7 +7,7 @@ Bienvenue sur le dépôt de mon projet Combat Pokémon réalisé en PHP orienté
 ## 🛠️ Technologies Employées
 
 - **PHP (POO) :** Modélisation des entités via des classes et sous-classes.
-- **HTML / CSS :** Interface simple pour afficher le combat et les résultats.
+- **HTML / CSS / Javascript :** Interface simple pour afficher le combat et les résultats.
 - **Laragon :** Serveur local pour exécuter le projet.
 
 ## 🚀 Installation et Lancement
